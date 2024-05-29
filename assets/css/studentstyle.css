@@ -1,0 +1,201 @@
+/* =========== Google Fonts ============ */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* =============== Globals ============== */
+* {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+    --green: #526436;
+    --lgreen: #C9D99E;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+/* ======================= Main ====================== */
+.container .topbar{
+    margin: auto;
+    align-items: center;
+}
+.topbar {
+    width: 98%;
+    height: 51px;
+    display: flex;
+    background: var(--lgreen);
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .logo img{
+    position: absolute;
+    width: 45px; 
+    height: 45px; 
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 50px;
+    align-items: center;
+    font-size: 1rem; 
+    cursor: pointer;
+    top: 3px;
+    left: 18px;
+  }
+  .logo h1{
+    position: absolute;
+    color: #526436;
+    top: 2px;
+    left: 80px;
+    letter-spacing: 0px;
+    cursor: pointer;
+  }
+  .logoutbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    border: none;
+    border-radius: 50px;
+    width: 120px;
+    height: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    left: 1380px;
+    top: 3px;
+    color: #C9D99E;
+}
+.logoutbtn img{
+    width: 35px;
+    height: 35px; 
+    margin: 0px 5px;
+    background-color: #526436;
+    border-radius: 50px;
+    border: 5px solid #526436;
+}
+.logoutbtn:hover{
+    background-color: #C9D99E;
+    color: #526436;
+    border: 3px solid #526436;
+    font-weight: bold;
+}
+.container .details{
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    align-items: center;
+}
+.details {
+    width: 99%;
+    height: 100%;
+    background: var(--lgreen);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+  .details .contents {
+    background: var(--lgreen);
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--green);
+  }
+
+/* ======================= Cards ====================== */
+.cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+.cardBox .card{
+    width: 1120px;
+}
+.cardBox .card .studentName{
+    letter-spacing: 4px;
+}
+.cardBox .card4{
+    width: 330px;
+}
+
+.cardBox .card,
+.cardBox .card4 {
+    position: relative;
+    background: var(--green);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardBox .card .studentName,
+.cardBox .card4 .numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.cardBox .card .cardName,
+.cardBox .card4 .cardName {
+    color: #C9D99E;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.cardBox .card .iconBx {
+    font-size: 3.5rem;
+    color: var(--black2);
+    margin-top: 10px;
+}
+
+/* =============== Table =============== */
+.details .contents table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.details .contents table th,
+.details .contents table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.details .contents table th {
+    background-color: var(--lgreen);
+    font-weight: 700;
+}
+
+.details .contents table td {
+    background-color: var(--white);
+}
+
+.details .contents table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.details .contents h2 {
+    margin-top: 40px;
+    color: var(--green);
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
